@@ -25,6 +25,8 @@ public class BaseChrome {
 		capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "Chrome");
 
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
+//		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Uiautomator2");
+
 
 		driver = new AndroidDriver<>(new URL("http:127.0.0.1:4723/wd/hub"), capabilities);
 
