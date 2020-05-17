@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="13" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Loan Department" duration-ms="110" started-at="2020-05-17T07:31:35Z" finished-at="2020-05-17T07:31:35Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="Test2.ploan()[pri:0, instance:test.first.Test2@32d992b2]" name="ploan" class="test.first.Test2"/>
+        <method signature="Test3.WebLoginCarLoan()[pri:0, instance:test.first.Test3@28feb3fa]" name="WebLoginCarLoan" class="test.first.Test3"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Car Loan" duration-ms="109" started-at="2020-05-17T07:31:35Z" finished-at="2020-05-17T07:31:35Z">
+      <class name="test.first.Test3">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeClass" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="1" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="DependentOnOne()[pri:0, instance:test.first.Test3@28feb3fa]" name="DependentOnOne" duration-ms="8" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DependentOnOne -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="DependentOnOneThing(java.lang.String, java.lang.String)[pri:0, instance:test.first.Test3@28feb3fa]" name="DependentOnOneThing" duration-ms="4" started-at="2020-05-17T13:01:35Z" data-provider="getData" finished-at="2020-05-17T13:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstSetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firstpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DependentOnOneThing -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="1" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="DependentOnOneThing(java.lang.String, java.lang.String)[pri:0, instance:test.first.Test3@28feb3fa]" name="DependentOnOneThing" duration-ms="1" started-at="2020-05-17T13:01:35Z" data-provider="getData" finished-at="2020-05-17T13:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondSetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DependentOnOneThing -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="1" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="DependentOnOneThing(java.lang.String, java.lang.String)[pri:0, instance:test.first.Test3@28feb3fa]" name="DependentOnOneThing" duration-ms="1" started-at="2020-05-17T13:01:35Z" data-provider="getData" finished-at="2020-05-17T13:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdSetUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DependentOnOneThing -->
+        <test-method status="PASS" signature="DependentOnTwo()[pri:0, instance:test.first.Test3@28feb3fa]" name="DependentOnTwo" duration-ms="4" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DependentOnTwo -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="MobileLoginCarLoan(java.lang.String)[pri:0, instance:test.first.Test3@28feb3fa]" name="MobileLoginCarLoan" duration-ms="1" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[him9290.pythonanywhere.com/CarLoan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MobileLoginCarLoan -->
+        <test-method status="PASS" signature="WebLoginCarLoan()[pri:0, instance:test.first.Test3@28feb3fa]" name="WebLoginCarLoan" duration-ms="1" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginCarLoan -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+        <test-method status="PASS" signature="LoginAPICarLoan()[pri:0, instance:test.first.Test3@28feb3fa]" name="LoginAPICarLoan" duration-ms="2" started-at="2020-05-17T13:01:35Z" depends-on-methods="test.first.Test3.DependentOnOne, test.first.Test3.DependentOnTwo" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginAPICarLoan -->
+        <test-method status="PASS" signature="BeforeEvery()[pri:0, instance:test.first.Test3@28feb3fa]" name="BeforeEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeEvery -->
+      </class> <!-- test.first.Test3 -->
+    </test> <!-- Car Loan -->
+    <test name="Home Loan" duration-ms="59" started-at="2020-05-17T07:31:35Z" finished-at="2020-05-17T07:31:35Z">
+      <class name="test.first.Test3">
+        <test-method status="PASS" signature="BFSuite()[pri:0, instance:test.first.Test3@28feb3fa]" name="BFSuite" is-config="true" duration-ms="7" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BFSuite -->
+      </class> <!-- test.first.Test3 -->
+      <class name="test.first.Test1">
+        <test-method status="PASS" signature="AFSuite()[pri:0, instance:test.first.Test1@215be6bb]" name="AFSuite" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AFSuite -->
+      </class> <!-- test.first.Test1 -->
+      <class name="test.first.Test4">
+        <test-method status="PASS" signature="WebLoginHomeLoan(java.lang.String)[pri:0, instance:test.first.Test4@39aeed2f]" name="WebLoginHomeLoan" duration-ms="9" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[him9290.pythonanywhere.com/HomeLoan]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- WebLoginHomeLoan -->
+      </class> <!-- test.first.Test4 -->
+    </test> <!-- Home Loan -->
+    <test name="Personal Loan" duration-ms="92" started-at="2020-05-17T07:31:35Z" finished-at="2020-05-17T07:31:35Z">
+      <class name="test.first.Test2">
+        <test-method status="PASS" signature="PrerequisitesExecuteFirst()[pri:0, instance:test.first.Test2@32d992b2]" name="PrerequisitesExecuteFirst" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrerequisitesExecuteFirst -->
+        <test-method status="PASS" signature="DemoTwoPersonalLoan(java.lang.String, java.lang.String)[pri:0, instance:test.first.Test2@32d992b2]" name="DemoTwoPersonalLoan" duration-ms="6" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[him9290.pythonanywhere.com/PersonalLoan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@four]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DemoTwoPersonalLoan -->
+        <test-method status="PASS" signature="ploan()[pri:0, instance:test.first.Test2@32d992b2]" name="ploan" duration-ms="2" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ploan -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:test.first.Test2@32d992b2]" name="AfterClass" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+        <test-method status="PASS" signature="PrererequisitesExecuteLast()[pri:0, instance:test.first.Test2@32d992b2]" name="PrererequisitesExecuteLast" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PrererequisitesExecuteLast -->
+      </class> <!-- test.first.Test2 -->
+      <class name="test.first.Test1">
+        <test-method status="PASS" signature="Demo()[pri:0, instance:test.first.Test1@215be6bb]" name="Demo" duration-ms="5" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method status="PASS" signature="AfterEvery()[pri:0, instance:test.first.Test1@215be6bb]" name="AfterEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+        <test-method status="FAIL" signature="SecondTest()[pri:0, instance:test.first.Test1@215be6bb]" name="SecondTest" duration-ms="9" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at test.first.Test1.SecondTest(Test1.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondTest -->
+        <test-method status="PASS" signature="AfterEvery()[pri:0, instance:test.first.Test1@215be6bb]" name="AfterEvery" is-config="true" duration-ms="0" started-at="2020-05-17T13:01:35Z" finished-at="2020-05-17T13:01:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterEvery -->
+      </class> <!-- test.first.Test1 -->
+    </test> <!-- Personal Loan -->
+  </suite> <!-- Loan Department -->
+</testng-results>

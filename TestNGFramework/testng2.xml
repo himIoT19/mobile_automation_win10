@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test name="Personal Loan">
+		<packages>
+			<!-- Include java packages to run using testNG -->
+			<package name="test.first" />	<!-- if single line only then can be ended like this -->
+		</packages>
+	</test>
+</suite>

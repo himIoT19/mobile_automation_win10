@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Loan_Department">
+              <span class="suite-name border-failed">Loan Department</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Loan_Department">
+                    <span>E:\Workspaces\Appium_Mobile_Automation\WS_appium\TestNGFramework\testng_parallel4.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Loan_Department">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Loan_Department">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Loan_Department">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Loan_Department">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Loan_Department">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Loan_Department">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">13 methods, 1 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Loan_Department" class="hide-methods failed suite-Loan_Department"> (hide)</a> <!-- hide-methods failed suite-Loan_Department -->
+                      <a href="#" panel-name="suite-Loan_Department" class="show-methods failed suite-Loan_Department"> (show)</a> <!-- show-methods failed suite-Loan_Department -->
+                    </span>
+                    <div class="method-list-content failed suite-Loan_Department">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test1" hash-for-method="SecondTest">SecondTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Loan_Department -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Loan_Department" class="hide-methods passed suite-Loan_Department"> (hide)</a> <!-- hide-methods passed suite-Loan_Department -->
+                      <a href="#" panel-name="suite-Loan_Department" class="show-methods passed suite-Loan_Department"> (show)</a> <!-- show-methods passed suite-Loan_Department -->
+                    </span>
+                    <div class="method-list-content passed suite-Loan_Department">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test1" hash-for-method="Demo">Demo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test2" hash-for-method="DemoTwoPersonalLoan(him9290.pythonanywhere.com/PersonalLoan, @four)">DemoTwoPersonalLoan(him9290.pythonanywhere.com/PersonalLoan, @four)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="DependentOnOne">DependentOnOne</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="DependentOnOneThing(secondSetUserName, secondpassword)">DependentOnOneThing(secondSetUserName, secondpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="DependentOnOneThing(thirdSetUserName, thirdpassword)">DependentOnOneThing(thirdSetUserName, thirdpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="DependentOnOneThing(firstSetUserName, firstpassword)">DependentOnOneThing(firstSetUserName, firstpassword)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="DependentOnTwo">DependentOnTwo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="LoginAPICarLoan">LoginAPICarLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="MobileLoginCarLoan(him9290.pythonanywhere.com/CarLoan)">MobileLoginCarLoan(him9290.pythonanywhere.com/CarLoan)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test3" hash-for-method="WebLoginCarLoan">WebLoginCarLoan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test4" hash-for-method="WebLoginHomeLoan(him9290.pythonanywhere.com/HomeLoan)">WebLoginHomeLoan(him9290.pythonanywhere.com/HomeLoan)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Loan_Department" title="test.first.Test2" hash-for-method="ploan">ploan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Loan_Department -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Loan_Department" class="panel Loan_Department">
+          <div class="suite-Loan_Department-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">test.first.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SecondTest">
+                  </a> <!-- SecondTest -->
+                  <span class="method-name">SecondTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at test.first.Test1.SecondTest(Test1.java:31)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Department-class-failed -->
+          <div class="suite-Loan_Department-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.first.Test1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Demo">
+                  </a> <!-- Demo -->
+                  <span class="method-name">Demo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Department-class-passed -->
+          <div class="suite-Loan_Department-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.first.Test3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DependentOnOne">
+                  </a> <!-- DependentOnOne -->
+                  <span class="method-name">DependentOnOne</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DependentOnOneThing(secondSetUserName, secondpassword)">
+                  </a> <!-- DependentOnOneThing(secondSetUserName, secondpassword) -->
+                  <span class="method-name">DependentOnOneThing</span>
+                  <span class="parameters">(secondSetUserName, secondpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DependentOnOneThing(thirdSetUserName, thirdpassword)">
+                  </a> <!-- DependentOnOneThing(thirdSetUserName, thirdpassword) -->
+                  <span class="method-name">DependentOnOneThing</span>
+                  <span class="parameters">(thirdSetUserName, thirdpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DependentOnOneThing(firstSetUserName, firstpassword)">
+                  </a> <!-- DependentOnOneThing(firstSetUserName, firstpassword) -->
+                  <span class="method-name">DependentOnOneThing</span>
+                  <span class="parameters">(firstSetUserName, firstpassword)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DependentOnTwo">
+                  </a> <!-- DependentOnTwo -->
+                  <span class="method-name">DependentOnTwo</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginAPICarLoan">
+                  </a> <!-- LoginAPICarLoan -->
+                  <span class="method-name">LoginAPICarLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MobileLoginCarLoan(him9290.pythonanywhere.com/CarLoan)">
+                  </a> <!-- MobileLoginCarLoan(him9290.pythonanywhere.com/CarLoan) -->
+                  <span class="method-name">MobileLoginCarLoan</span>
+                  <span class="parameters">(him9290.pythonanywhere.com/CarLoan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebLoginCarLoan">
+                  </a> <!-- WebLoginCarLoan -->
+                  <span class="method-name">WebLoginCarLoan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Department-class-passed -->
+          <div class="suite-Loan_Department-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.first.Test2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DemoTwoPersonalLoan(him9290.pythonanywhere.com/PersonalLoan, @four)">
+                  </a> <!-- DemoTwoPersonalLoan(him9290.pythonanywhere.com/PersonalLoan, @four) -->
+                  <span class="method-name">DemoTwoPersonalLoan</span>
+                  <span class="parameters">(him9290.pythonanywhere.com/PersonalLoan, @four)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ploan">
+                  </a> <!-- ploan -->
+                  <span class="method-name">ploan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Department-class-passed -->
+          <div class="suite-Loan_Department-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.first.Test4</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="WebLoginHomeLoan(him9290.pythonanywhere.com/HomeLoan)">
+                  </a> <!-- WebLoginHomeLoan(him9290.pythonanywhere.com/HomeLoan) -->
+                  <span class="method-name">WebLoginHomeLoan</span>
+                  <span class="parameters">(him9290.pythonanywhere.com/HomeLoan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Loan_Department-class-passed -->
+        </div> <!-- panel Loan_Department -->
+        <div panel-name="test-xml-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Workspaces\Appium_Mobile_Automation\WS_appium\TestNGFramework\testng_parallel4.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;8&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Loan Department&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;test.first.Listeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;8&quot; name=&quot;Personal Loan&quot; parallel=&quot;classes&quot;&gt;
+    &lt;parameter name=&quot;APIKey/username&quot; value=&quot;@four&quot;/&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;him9290.pythonanywhere.com/PersonalLoan&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.first.Test1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;D.*&quot;/&gt;
+          &lt;include name=&quot;S.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test.first.Test1 --&gt;
+      &lt;class name=&quot;test.first.Test2&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Personal Loan --&gt;
+  &lt;test name=&quot;Car Loan&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;him9290.pythonanywhere.com/CarLoan&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.first.Test3&quot;&gt;
+        &lt;methods&gt;
+          &lt;exclude name=&quot;MobileS.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test.first.Test3 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Car Loan --&gt;
+  &lt;test name=&quot;Home Loan&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;him9290.pythonanywhere.com/HomeLoan&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.first.Test4&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Web.*&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- test.first.Test4 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Home Loan --&gt;
+&lt;/suite&gt; &lt;!-- Loan Department --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Loan Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Personal Loan (2 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">Car Loan (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Home Loan (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Loan Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">WebLoginCarLoan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ploan</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Loan Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Loan_Department');
+function tableData_Loan_Department() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(13);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'WebLoginHomeLoan')
+data.setCell(0, 2, 'test.first.Test4')
+data.setCell(0, 3, 9);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'SecondTest')
+data.setCell(1, 2, 'test.first.Test1')
+data.setCell(1, 3, 9);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'DependentOnOne')
+data.setCell(2, 2, 'test.first.Test3')
+data.setCell(2, 3, 8);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DemoTwoPersonalLoan')
+data.setCell(3, 2, 'test.first.Test2')
+data.setCell(3, 3, 6);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Demo')
+data.setCell(4, 2, 'test.first.Test1')
+data.setCell(4, 3, 5);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'DependentOnTwo')
+data.setCell(5, 2, 'test.first.Test3')
+data.setCell(5, 3, 4);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'DependentOnOneThing')
+data.setCell(6, 2, 'test.first.Test3')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'LoginAPICarLoan')
+data.setCell(7, 2, 'test.first.Test3')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'ploan')
+data.setCell(8, 2, 'test.first.Test2')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'DependentOnOneThing')
+data.setCell(9, 2, 'test.first.Test3')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'WebLoginCarLoan')
+data.setCell(10, 2, 'test.first.Test3')
+data.setCell(10, 3, 1);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'MobileLoginCarLoan')
+data.setCell(11, 2, 'test.first.Test3')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'DependentOnOneThing')
+data.setCell(12, 2, 'test.first.Test3')
+data.setCell(12, 3, 1);
+window.suiteTableData['Loan_Department']= { tableData: data, tableDiv: 'times-div-Loan_Department'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 53 ms</span>
+              <div id="times-div-Loan_Department">
+              </div> <!-- times-div-Loan_Department -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Loan Department</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">6 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.first.Test3</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">MobileSignInCarLoan</span>
+                <br/>
+                <span class="ignored-method-name">MobileSignOutCarLoan</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">test.first.Test4</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">MobileLoginHomeLoan</span>
+                <br/>
+                <span class="ignored-method-name">LoginAPIHomeLoan</span>
+                <br/>
+                <span class="ignored-method-name">MobileSignOutHomeLoan</span>
+                <br/>
+                <span class="ignored-method-name">MobileSignInHomeLoan</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Loan_Department" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">BFSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">PrerequisitesExecuteFirst</span>
+                <span class="method-start">15 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">BeforeClass</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">55 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Demo</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DependentOnOne</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test4</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">WebLoginHomeLoan(him9290.pythonanywhere.com/HomeLoan)</span>
+                <span class="method-start">56 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DemoTwoPersonalLoan(him9290.pythonanywhere.com/PersonalLoan, @four)</span>
+                <span class="method-start">57 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ploan</span>
+                <span class="method-start">67 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEvery</span>
+                <span class="method-start">68 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">SecondTest</span>
+                <span class="method-start">69 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">71 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">AfterClass</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DependentOnOneThing(firstSetUserName, firstpassword)</span>
+                <span class="method-start">72 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">79 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DependentOnOneThing(secondSetUserName, secondpassword)</span>
+                <span class="method-start">80 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">83 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">DependentOnOneThing(thirdSetUserName, thirdpassword)</span>
+                <span class="method-start">84 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">AfterEvery</span>
+                <span class="method-start">102 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">104 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test2</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">PrererequisitesExecuteLast</span>
+                <span class="method-start">104 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">DependentOnTwo</span>
+                <span class="method-start">104 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MobileLoginCarLoan(him9290.pythonanywhere.com/CarLoan)</span>
+                <span class="method-start">111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">WebLoginCarLoan</span>
+                <span class="method-start">114 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">BeforeEvery</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">LoginAPICarLoan</span>
+                <span class="method-start">118 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.first.Test1</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">AFSuite</span>
+                <span class="method-start">137 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	<test name="Regression">
+		<groups>
+			<run>
+				<!-- To only Run Tests for Group(Smoke) created -->
+				<include name="Smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test.first.Test1" />
+			<class name="test.first.Test2" />
+			<class name="test.first.Test3" />
+			<class name="test.first.Test4" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,7 @@
+Note:
+
+1. Put all the "testng.xml" files in the Project folder only.
+2. (Scenario1): Deleting all the data before starting automation.
+
+TESTS => Methods in Class
+TEST_CASE => Class

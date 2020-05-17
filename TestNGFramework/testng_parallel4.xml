@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department" parallel="tests" thread-count="8">	<!-- for parallel execution -->
+	<!-- Implement Listeners -->
+	<listeners>
+		<listener class-name="test.first.Listeners" />
+	</listeners>
+
+	<!-- Paramerters applicable to all test folders -->
+	<!-- <parameter name="URL" value="him9290.pythonanywhere.com" /> -->
+	<!-- Personal Loan Test Folder (Terminology) -->
+	<test name="Personal Loan" parallel="classes" thread-count="8">
+		<!-- Parameters applicable to this particular test folder -->
+		<parameter name="URL" value="him9290.pythonanywhere.com/PersonalLoan" />
+		<parameter name="APIKey/username" value="@four" />
+		<classes>
+			<class name="test.first.Test1">
+				<methods>
+					<!-- Using REGEX to include or exclude any Test Case -->
+					<include name="D.*" />
+					<include name="S.*" />
+				</methods>
+			</class>
+			<class name="test.first.Test2" />		<!-- if single line only then can be ended like this -->
+		</classes>
+	</test>
+
+	<!-- Car Loan Test Folder (Terminology) -->
+	<test name="Car Loan">
+		<!-- Parameters applicable to this particular test folder -->
+		<parameter name="URL" value="him9290.pythonanywhere.com/CarLoan" />
+		<classes>
+			<class name="test.first.Test3">
+				<methods>
+					<!-- using REGEX excluding all the Test Cases starting with "Mobile" -->
+					<exclude name="MobileS.*" />	<!-- if single line only then can be ended like this -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<!-- Home Loan Test Folder (Terminology) -->
+	<test name="Home Loan">
+		<!-- Parameters applicable to this particular test folder -->
+		<parameter name="URL" value="him9290.pythonanywhere.com/HomeLoan" />
+		<classes>
+			<class name="test.first.Test4">
+				<methods>
+					<include name="Web.*" />		<!-- if single line only then can be ended like this -->
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
