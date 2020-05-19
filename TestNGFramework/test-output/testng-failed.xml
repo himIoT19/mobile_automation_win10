@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="8" guice-stage="DEVELOPMENT" name="Failed suite [Loan Department]" parallel="tests">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Loan Department]">
   <parameter name="APIKey/username" value="@four"/>
   <parameter name="URL" value="him9290.pythonanywhere.com/HomeLoan"/>
   <listeners>
     <listener class-name="test.first.Listeners"/>
   </listeners>
-  <test name="Personal Loan(failed)" parallel="classes">
+  <test name="Personal Loan(failed)">
     <parameter name="APIKey/username" value="@four"/>
     <parameter name="URL" value="him9290.pythonanywhere.com/PersonalLoan"/>
     <classes>
+      <class name="test.first.Test3">
+        <methods>
+          <include name="BeforeClass"/>
+          <include name="BeforeEvery"/>
+          <include name="BFSuite"/>
+        </methods>
+      </class> <!-- test.first.Test3 -->
       <class name="test.first.Test1">
         <methods>
           <include name="AFSuite"/>
@@ -24,13 +31,6 @@
           <include name="AfterClass"/>
         </methods>
       </class> <!-- test.first.Test2 -->
-      <class name="test.first.Test3">
-        <methods>
-          <include name="BeforeClass"/>
-          <include name="BeforeEvery"/>
-          <include name="BFSuite"/>
-        </methods>
-      </class> <!-- test.first.Test3 -->
     </classes>
   </test> <!-- Personal Loan(failed) -->
 </suite> <!-- Failed suite [Loan Department] -->

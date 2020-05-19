@@ -20,9 +20,11 @@ public class BaseTwo {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "HEMUA_1");
-		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
+		
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-
+		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 14);
+		
+		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 		driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 
 		return driver;
