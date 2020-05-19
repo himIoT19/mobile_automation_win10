@@ -16,6 +16,7 @@ public class ApiDemoTest extends BaseTwo {
 	public void apiDemo() throws IOException, InterruptedException {
 		// START the Appium Server
 		service = startAppiumServer();
+		Thread.sleep(10000);
 
 		AndroidDriver<AndroidElement> driver = capabilities("apiDemo");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

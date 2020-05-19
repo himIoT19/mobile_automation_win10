@@ -18,7 +18,7 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 public class BaseTwo {
 	public static AppiumDriverLocalService service;
 
-	public AppiumDriverLocalService startAppiumServer() {
+	public AppiumDriverLocalService startAppiumServer() throws InterruptedException {
 
 		// Check if Appium Server is already running
 		boolean flag = checkIfAppiumServerIsRunning(4723);
@@ -28,6 +28,7 @@ public class BaseTwo {
 			// Provided by Appium guys(help us to start server)
 			service = AppiumDriverLocalService.buildDefaultService();
 			service.start();
+			Thread.sleep(20000);
 		}
 
 		return service;
@@ -51,12 +52,12 @@ public class BaseTwo {
 
 	}
 
-	public static void startEmulator() throws IOException, InterruptedException {
+/*	public static void startEmulator() throws IOException, InterruptedException {
 
 		Runtime.getRuntime()
 				.exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat.lnk");
 		Thread.sleep(100000);
-	}
+	}*/
 
 	public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException {
 
@@ -75,9 +76,9 @@ public class BaseTwo {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		String device = (String) prop.get("device");
-		if (device.contains("emulator")) {
+		/*if (device.contains("emulator")) {
 			startEmulator();
-		}
+		}*/
 
 		// Start Emulator
 		/*
