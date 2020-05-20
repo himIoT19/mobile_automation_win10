@@ -52,12 +52,11 @@ public class BaseTwo {
 
 	}
 
-/*	public static void startEmulator() throws IOException, InterruptedException {
+	public static void startEmulator() throws IOException, InterruptedException {
 
-		Runtime.getRuntime()
-				.exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat.lnk");
-		Thread.sleep(100000);
-	}*/
+		Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat");
+		Thread.sleep(10000);
+	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException {
 
@@ -76,9 +75,11 @@ public class BaseTwo {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		String device = (String) prop.get("device");
-		/*if (device.contains("emulator")) {
+
+		if (device.contains("HEMUA_1")) {
 			startEmulator();
-		}*/
+		}
+		Thread.sleep(20000);
 
 		// Start Emulator
 		/*

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -12,7 +13,7 @@ import pageobjects.CheckoutPage;
 import pageobjects.FormPageEcomApp;
 import pageobjects.ProductPage;
 
-public class ECommerce_TC_CodeOptimized_4 extends BaseTwo {
+public class EcommerceCodeOptimized4Test extends BaseTwo {
 
 	@Test
 	public void totalValidation() throws IOException, InterruptedException {
@@ -85,6 +86,12 @@ public class ECommerce_TC_CodeOptimized_4 extends BaseTwo {
 
 		// STOP Appium server, because it is not the only TC we are executing
 		service.stop();
+	}
+
+	@BeforeTest
+	public void killAllNodesAppiumServer() throws IOException, InterruptedException {
+		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
+		Thread.sleep(3000);
 	}
 
 	public static double getAmount(String value) {

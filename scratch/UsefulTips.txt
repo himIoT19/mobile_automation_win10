@@ -1,0 +1,23 @@
+1. To kill a Node.js server:
+
+$ taskkill /f /im node.exe
+
+=> success(msg): "SUCCESS: The process "node.exe" with PID 9904 has been terminated."
+=> if no server running(msg): "ERROR: The process "node.exe" not found."
+=> refer: https://stackoverflow.com/questions/14790910/stop-all-instances-of-node-js-server
+
+2. If Android Emulator not runs:
+Run cmd:
+$ adb start-server  
+(or)
+try: 
+$ adb devices
+=> msg(if success): 
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+List of devices attached
+
+3. To capture android elements(use "uiautomatorviewer.bat"):
+go to dir and run:
+c:\Users\Admin\AppData\Local\Android\sdk\tools\bin>uiautomatorviewer.bat
+		

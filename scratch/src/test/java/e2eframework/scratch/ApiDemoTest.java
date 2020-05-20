@@ -60,8 +60,8 @@ public class ApiDemoTest extends BaseTwo {
 		FrameLayout fl = new FrameLayout(driver);
 		fl.getEditText().sendKeys("HiMaNsHu");
 
-		fl.getOkButton().get(1).click();
 		// get(1) => handle duplicate instances
+		fl.getOkButton().get(1).click();
 
 		// STOP the Appium Server so that other TC cn not be affected.
 		service.stop();
