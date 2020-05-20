@@ -8,11 +8,6 @@
           <include name="apiDemo"/>
         </methods>
       </class> <!-- e2eframework.scratch.ApiDemoTest -->
-      <class name="e2eframework.scratch.ECommerce_TC_CodeOptimized_4">
-        <methods>
-          <include name="totalValidation"/>
-        </methods>
-      </class> <!-- e2eframework.scratch.ECommerce_TC_CodeOptimized_4 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

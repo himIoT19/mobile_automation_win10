@@ -32,7 +32,7 @@ public class ECommerce_TC_CodeOptimized_4 extends BaseTwo {
 		 * fp.nameField.sendKeys("Himanshu"); can't be used for logging purpose
 		 * (or) we can use like below:
 		 */
-		fp.getNameField().sendKeys("Himanshu"); // used for lgging
+		fp.getNameField().sendKeys("AdItI"); // used for lgging
 
 		// hide keyboard
 		driver.hideKeyboard();

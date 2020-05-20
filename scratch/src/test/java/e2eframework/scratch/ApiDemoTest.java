@@ -58,7 +58,7 @@ public class ApiDemoTest extends BaseTwo {
 		// Frame Layout Page
 		// to input data in text field
 		FrameLayout fl = new FrameLayout(driver);
-		fl.getEditText().sendKeys("hello");
+		fl.getEditText().sendKeys("HiMaNsHu");
 
 		fl.getOkButton().get(1).click();
 		// get(1) => handle duplicate instances

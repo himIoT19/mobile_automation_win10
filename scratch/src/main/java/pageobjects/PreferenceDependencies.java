@@ -23,7 +23,7 @@ public class PreferenceDependencies {
 	 * When nothing is unique: class => android.widget.RelativeLayout TRICK:
 	 * (android.widget.RelativeLayout).[2]
 	 */
-	@AndroidFindBy(xpath = "//android.widget.RelativeLayout[2]")
+	@AndroidFindBy(xpath = "(//android.widget.RelativeLayout)[2]")
 	private AndroidElement wifiSettings;
 
 	public AndroidElement getWifiCheckbox() {

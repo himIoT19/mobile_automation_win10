@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="103323" started-at="2020-05-19T16:15:21Z" finished-at="2020-05-19T16:17:04Z">
+  <suite name="Suite" duration-ms="100179" started-at="2020-05-20T09:31:22Z" finished-at="2020-05-20T09:33:02Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="103323" started-at="2020-05-19T16:15:21Z" finished-at="2020-05-19T16:17:04Z">
+    <test name="Test" duration-ms="100179" started-at="2020-05-20T09:31:22Z" finished-at="2020-05-20T09:33:02Z">
       <class name="e2eframework.scratch.ApiDemoTest">
-        <test-method status="PASS" signature="apiDemo()[pri:0, instance:e2eframework.scratch.ApiDemoTest@4bec1f0c]" name="apiDemo" duration-ms="50856" started-at="2020-05-19T21:46:13Z" finished-at="2020-05-19T21:47:04Z">
+        <test-method status="PASS" signature="apiDemo()[pri:0, instance:e2eframework.scratch.ApiDemoTest@4bec1f0c]" name="apiDemo" duration-ms="49324" started-at="2020-05-20T15:02:13Z" finished-at="2020-05-20T15:03:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiDemo -->
       </class> <!-- e2eframework.scratch.ApiDemoTest -->
       <class name="e2eframework.scratch.ECommerce_TC_CodeOptimized_4">
-        <test-method status="PASS" signature="totalValidation()[pri:0, instance:e2eframework.scratch.ECommerce_TC_CodeOptimized_4@4b952a2d]" name="totalValidation" duration-ms="52439" started-at="2020-05-19T21:45:21Z" finished-at="2020-05-19T21:46:13Z">
+        <test-method status="PASS" signature="totalValidation()[pri:0, instance:e2eframework.scratch.ECommerce_TC_CodeOptimized_4@4b952a2d]" name="totalValidation" duration-ms="50817" started-at="2020-05-20T15:01:22Z" finished-at="2020-05-20T15:02:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- totalValidation -->
