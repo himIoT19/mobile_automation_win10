@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
+import pageobjects.FrameLayout;
 import pageobjects.HomePage;
+import pageobjects.PreferenceDependencies;
 import pageobjects.Preferences;
 
 public class ApiDemoTest extends BaseTwo {
@@ -29,6 +31,7 @@ public class ApiDemoTest extends BaseTwo {
 		 * we generally pic value from 'class' attribute not always)
 		 */
 
+		// Home page(when you start the app the 1st page)
 		HomePage hp = new HomePage(driver);
 		// Constructor of the class will be called when Object invoked
 		// if not then default constructor will be called
@@ -37,34 +40,29 @@ public class ApiDemoTest extends BaseTwo {
 		/*
 		 * You can call the methods or variable of the Class with Class-Object
 		 */
-		hp.Preferences.click();
+		hp.getPreferences().click();
 
+		// Preference Page
 		// driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
 		Preferences pref = new Preferences(driver);
 
 		/*
 		 * You can call the methods or variable of the Class with Class-Object
 		 */
-		pref.PreferenceDependencies.click();
+		pref.getPreferenceDependencies().click();
 
-		/*
-		 * driver.
-		 * findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']"
-		 * ).click();
-		 */
-		driver.findElementById("android:id/checkbox").click();
+		// Preference Dependencies Page
+		PreferenceDependencies pd = new PreferenceDependencies(driver);
+		pd.getWifiCheckbox().click();
+		pd.getWifiSettings().click();
 
-		/*
-		 * When nothing is unique: class => android.widget.RelativeLayout TRICK:
-		 * (android.widget.RelativeLayout).[2]
-		 */
-		driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
-
+		// Frame Layout Page
 		// to input data in text field
-		driver.findElementByClassName("android.widget.EditText").sendKeys("hello");
+		FrameLayout fl = new FrameLayout(driver);
+		fl.getEditText().sendKeys("hello");
 
 		// driver.findElementById("android:id/button1").click();
-		driver.findElementsByClassName("android.widget.Button").get(1).click();
+		fl.getOkButton().get(1).click();
 		// get(1) => handle duplicate instances
 
 		// STOP the Appium Server so that other TC cn not be affected.
