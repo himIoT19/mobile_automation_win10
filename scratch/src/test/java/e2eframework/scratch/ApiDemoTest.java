@@ -43,7 +43,6 @@ public class ApiDemoTest extends BaseTwo {
 		hp.getPreferences().click();
 
 		// Preference Page
-		// driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
 		Preferences pref = new Preferences(driver);
 
 		/*
@@ -61,7 +60,6 @@ public class ApiDemoTest extends BaseTwo {
 		FrameLayout fl = new FrameLayout(driver);
 		fl.getEditText().sendKeys("hello");
 
-		// driver.findElementById("android:id/button1").click();
 		fl.getOkButton().get(1).click();
 		// get(1) => handle duplicate instances
 
