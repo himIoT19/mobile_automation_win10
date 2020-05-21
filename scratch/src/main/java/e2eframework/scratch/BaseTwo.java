@@ -8,6 +8,9 @@ import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -17,7 +20,9 @@ import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class BaseTwo {
 	public static AppiumDriverLocalService service;
+	public static AndroidDriver<AndroidElement> driver; // global level
 
+	// Start a new Appium-server method
 	public AppiumDriverLocalService startAppiumServer() throws InterruptedException {
 
 		// Check if Appium Server is already running
@@ -34,6 +39,7 @@ public class BaseTwo {
 		return service;
 	}
 
+	// Method to get Status of Appium-server
 	public static boolean checkIfAppiumServerIsRunning(int port) {
 
 		boolean isAppiumServerRunning = false;
@@ -66,7 +72,7 @@ public class BaseTwo {
 		Properties prop = new Properties();
 		prop.load(fis);
 
-		AndroidDriver<AndroidElement> driver;
+		// AndroidDriver<AndroidElement> driver; because not global
 
 		File appDir = new File("src");
 		// Should not be hard-coded
@@ -76,15 +82,13 @@ public class BaseTwo {
 
 		String device = (String) prop.get("device");
 
+		/*
+		 * Start Emulator "XXX.bat" file is used to execute commands
+		 */
 		if (device.contains("HEMUA_1")) {
 			startEmulator();
 		}
 		Thread.sleep(20000);
-
-		// Start Emulator
-		/*
-		 * "XXX.bat" file is used to execute commands
-		 */
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		// Standard for Android (So no Hard-Coded)
@@ -96,6 +100,13 @@ public class BaseTwo {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		return driver;
+	}
+
+	public static void getScreenshot(String s) throws IOException {
+
+		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		// Now copy this File Object in local machine
+		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screenshot\\" + s + ".png"));
 	}
 
 }
