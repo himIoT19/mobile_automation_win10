@@ -15,7 +15,7 @@ import pageobjects.ProductPage;
 public class EcommerceCodeOptimized4Test extends BaseTwo {
 
 	@Test(dataProvider = "InputData", dataProviderClass = TestDataEcommerce.class)
-	public void totalValidation(String input) throws IOException, InterruptedException {
+	public void totalValidation(String inputText, String countryName) throws IOException, InterruptedException {
 
 		service = startAppiumServer();
 		Thread.sleep(5000);
@@ -32,7 +32,7 @@ public class EcommerceCodeOptimized4Test extends BaseTwo {
 		 * fp.nameField.sendKeys("Himanshu"); can't be used for logging purpose
 		 * (or) we can use like below:
 		 */
-		fp.getNameField().sendKeys(input); // used for lgging
+		fp.getNameField().sendKeys(inputText); // used for lgging
 
 		// hide keyboard
 		driver.hideKeyboard();
@@ -41,7 +41,7 @@ public class EcommerceCodeOptimized4Test extends BaseTwo {
 		fp.getCountrySelection().click(); // since private
 
 		Utilities utils = new Utilities(driver);
-		utils.scrollToText("Argentina");
+		utils.scrollToText(countryName);
 
 		fp.getCountryScroll().click();
 		fp.getLetsShop().click();

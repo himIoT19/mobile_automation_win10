@@ -61,7 +61,7 @@ public class BaseTwo {
 	public static void startEmulator() throws IOException, InterruptedException {
 
 		Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat");
-		Thread.sleep(30000);
+		Thread.sleep(10000);
 	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException {
@@ -88,7 +88,7 @@ public class BaseTwo {
 		if (device.contains("HEMUA_1")) {
 			startEmulator();
 		}
-		Thread.sleep(30000);
+		// Thread.sleep(6000);
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		// Standard for Android (So no Hard-Coded)
@@ -102,11 +102,11 @@ public class BaseTwo {
 		return driver;
 	}
 
-	public static void getScreenshot(String s) throws IOException {
+	public static void getScreenshot(String imageName) throws IOException {
 
 		File srcFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		// Now copy this File Object in local machine
-		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screenshot\\" + s + ".png"));
+		FileUtils.copyFile(srcFile, new File(System.getProperty("user.dir") + "\\screenshot\\" + imageName + ".png"));
 	}
 
 }

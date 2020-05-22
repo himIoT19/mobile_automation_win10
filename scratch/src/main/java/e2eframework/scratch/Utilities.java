@@ -1,6 +1,6 @@
-package e2eframework.scratch;
+	package e2eframework.scratch;
 
-import io.appium.java_client.MobileBy;
+//import io.appium.java_client.MobileBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 
@@ -14,10 +14,15 @@ public class Utilities {
 
 	public void scrollToText(String text) {
 
-		driver.findElement(
-				MobileBy.AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))."
-						+ "scrollIntoView(new UiSelector().textMatches(\"" + text + "\")." + "instance(0))"));
+		driver.findElementByAndroidUIAutomator(
+				"new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + text + "\"));");
 
+		/*
+		 * driver.findElement( MobileBy.
+		 * AndroidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))."
+		 * + "scrollIntoView(new UiSelector().textMatches(\"" + text + "\")." +
+		 * "instance(0))"));
+		 */
 	}
 
 }
