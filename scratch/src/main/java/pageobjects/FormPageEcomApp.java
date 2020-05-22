@@ -9,8 +9,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class FormPageEcomApp {
 
-	@SuppressWarnings("unused")
-	private AndroidDriver<AndroidElement> driver;
+	AndroidDriver<AndroidElement> driver;
 
 	/*
 	 * 1. First thing is to call the driver Object from testcase to PageObject.
@@ -34,7 +33,8 @@ public class FormPageEcomApp {
 	@AndroidFindBy(id = "android:id/text1")
 	private AndroidElement countrySelection;
 
-	@AndroidFindBy(xpath = "//*[@text='Argentina']")
+	// have to implement to check for different countries using @DataProviders
+	@AndroidFindBy(xpath = "//*[@text='Bhutan']")
 	private AndroidElement countryScroll;
 
 	@AndroidFindBy(id = "com.androidsample.generalstore:id/btnLetsShop")

@@ -10,11 +10,11 @@
       <class name="e2eframework.scratch.EcommerceCodeOptimized4Test">
         <methods>
           <include name="killAllNodesAppiumServer"/>
-          <include name="totalValidation" invocation-numbers="0 2 3 4"/>
         </methods>
       </class> <!-- e2eframework.scratch.EcommerceCodeOptimized4Test -->
       <class name="e2eframework.scratch.ApiDemoTest">
         <methods>
+          <include name="apiDemoTest" invocation-numbers="1"/>
           <include name="killAllNodesAppiumServer"/>
         </methods>
       </class> <!-- e2eframework.scratch.ApiDemoTest -->
