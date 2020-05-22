@@ -1,23 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="207370" started-at="2020-05-20T12:26:17Z" finished-at="2020-05-20T12:29:44Z">
+  <suite name="Suite" duration-ms="740477" started-at="2020-05-21T14:24:31Z" finished-at="2020-05-21T14:36:51Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="207370" started-at="2020-05-20T12:26:17Z" finished-at="2020-05-20T12:29:44Z">
+    <test name="Test" duration-ms="740477" started-at="2020-05-21T14:24:31Z" finished-at="2020-05-21T14:36:51Z">
       <class name="e2eframework.scratch.ApiDemoTest">
-        <test-method status="PASS" signature="apiDemo()[pri:0, instance:e2eframework.scratch.ApiDemoTest@4bec1f0c]" name="apiDemo" duration-ms="88632" started-at="2020-05-20T17:58:16Z" finished-at="2020-05-20T17:59:44Z">
+        <test-method status="PASS" signature="killAllNodesAppiumServer()[pri:0, instance:e2eframework.scratch.ApiDemoTest@544fe44c]" name="killAllNodesAppiumServer" is-config="true" duration-ms="2016" started-at="2020-05-21T19:54:31Z" finished-at="2020-05-21T19:54:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- apiDemo -->
+        </test-method> <!-- killAllNodesAppiumServer -->
+        <test-method status="PASS" signature="killAllNodesAppiumServer()[pri:0, instance:e2eframework.scratch.EcommerceCodeOptimized4Test@31dc339b]" name="killAllNodesAppiumServer" is-config="true" duration-ms="2005" started-at="2020-05-21T19:54:33Z" finished-at="2020-05-21T19:54:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- killAllNodesAppiumServer -->
+        <test-method status="PASS" signature="apiDemoTest(java.lang.String)[pri:0, instance:e2eframework.scratch.ApiDemoTest@544fe44c]" name="apiDemoTest" duration-ms="93964" started-at="2020-05-21T20:03:48Z" data-provider="InputData" finished-at="2020-05-21T20:05:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiDemoTest -->
+        <test-method status="PASS" signature="apiDemoTest(java.lang.String)[pri:0, instance:e2eframework.scratch.ApiDemoTest@544fe44c]" name="apiDemoTest" duration-ms="89014" started-at="2020-05-21T20:05:22Z" data-provider="InputData" finished-at="2020-05-21T20:06:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[!@#$%]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiDemoTest -->
       </class> <!-- e2eframework.scratch.ApiDemoTest -->
-      <class name="e2eframework.scratch.ECommerce_TC_CodeOptimized_4">
-        <test-method status="PASS" signature="totalValidation()[pri:0, instance:e2eframework.scratch.ECommerce_TC_CodeOptimized_4@4b952a2d]" name="totalValidation" duration-ms="118710" started-at="2020-05-20T17:56:17Z" finished-at="2020-05-20T17:58:16Z">
+      <class name="e2eframework.scratch.EcommerceCodeOptimized4Test">
+        <test-method status="PASS" signature="totalValidation(java.lang.String)[pri:0, instance:e2eframework.scratch.EcommerceCodeOptimized4Test@31dc339b]" name="totalValidation" duration-ms="142354" started-at="2020-05-21T19:54:35Z" data-provider="InputData" finished-at="2020-05-21T19:56:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ADITI]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- totalValidation -->
-      </class> <!-- e2eframework.scratch.ECommerce_TC_CodeOptimized_4 -->
+        <test-method status="PASS" signature="totalValidation(java.lang.String)[pri:0, instance:e2eframework.scratch.EcommerceCodeOptimized4Test@31dc339b]" name="totalValidation" duration-ms="118245" started-at="2020-05-21T19:56:57Z" data-provider="InputData" finished-at="2020-05-21T19:58:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A!@#I]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalValidation -->
+        <test-method status="PASS" signature="totalValidation(java.lang.String)[pri:0, instance:e2eframework.scratch.EcommerceCodeOptimized4Test@31dc339b]" name="totalValidation" duration-ms="98348" started-at="2020-05-21T19:58:56Z" data-provider="InputData" finished-at="2020-05-21T20:00:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AdItI]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalValidation -->
+        <test-method status="PASS" signature="totalValidation(java.lang.String)[pri:0, instance:e2eframework.scratch.EcommerceCodeOptimized4Test@31dc339b]" name="totalValidation" duration-ms="97291" started-at="2020-05-21T20:00:34Z" data-provider="InputData" finished-at="2020-05-21T20:02:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalValidation -->
+        <test-method status="PASS" signature="totalValidation(java.lang.String)[pri:0, instance:e2eframework.scratch.EcommerceCodeOptimized4Test@31dc339b]" name="totalValidation" duration-ms="97141" started-at="2020-05-21T20:02:11Z" data-provider="InputData" finished-at="2020-05-21T20:03:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[AD92I]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- totalValidation -->
+      </class> <!-- e2eframework.scratch.EcommerceCodeOptimized4Test -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

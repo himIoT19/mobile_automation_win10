@@ -1,7 +1,6 @@
 package e2eframework.scratch;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -15,17 +14,17 @@ import pageobjects.ProductPage;
 
 public class EcommerceCodeOptimized4Test extends BaseTwo {
 
-	@Test
-	public void totalValidation() throws IOException, InterruptedException {
+	@Test(dataProvider = "InputData", dataProviderClass = TestDataEcommerce.class)
+	public void totalValidation(String input) throws IOException, InterruptedException {
 
 		service = startAppiumServer();
+		Thread.sleep(5000);
+
 		/*
 		 * Make appName globalise so that if new version came u need not to edit
 		 * in every TestCase => General-Store.apk4.0
 		 */
 		AndroidDriver<AndroidElement> driver = capabilities("GeneralStoreApp");
-
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		FormPageEcomApp fp = new FormPageEcomApp(driver);
 
@@ -33,7 +32,7 @@ public class EcommerceCodeOptimized4Test extends BaseTwo {
 		 * fp.nameField.sendKeys("Himanshu"); can't be used for logging purpose
 		 * (or) we can use like below:
 		 */
-		fp.getNameField().sendKeys("AdItI"); // used for lgging
+		fp.getNameField().sendKeys(input); // used for lgging
 
 		// hide keyboard
 		driver.hideKeyboard();
@@ -60,7 +59,7 @@ public class EcommerceCodeOptimized4Test extends BaseTwo {
 		pp.getGotoCart().click();
 
 		// sleep, so that it can select the target from current page
-		Thread.sleep(4000);
+		Thread.sleep(2000);
 
 		// Checkout Page
 		CheckoutPage ckp = new CheckoutPage(driver);
@@ -91,7 +90,7 @@ public class EcommerceCodeOptimized4Test extends BaseTwo {
 	@BeforeTest
 	public void killAllNodesAppiumServer() throws IOException, InterruptedException {
 		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 	}
 
 	public static double getAmount(String value) {

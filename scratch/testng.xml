@@ -3,12 +3,13 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="resources.ReportingListeners"></listener>
+		<listener class-name="resources.ExtentReporterNG"></listener>
+
 	</listeners>
 	<test name="Test">
 		<classes>
 			<class name="e2eframework.scratch.EcommerceCodeOptimized4Test" />
 			<class name="e2eframework.scratch.ApiDemoTest" />
-
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

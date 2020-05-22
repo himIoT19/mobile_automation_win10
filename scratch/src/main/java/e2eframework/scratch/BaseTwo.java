@@ -33,7 +33,7 @@ public class BaseTwo {
 			// Provided by Appium guys(help us to start server)
 			service = AppiumDriverLocalService.buildDefaultService();
 			service.start();
-			Thread.sleep(20000);
+			Thread.sleep(1000);
 		}
 
 		return service;
@@ -61,7 +61,7 @@ public class BaseTwo {
 	public static void startEmulator() throws IOException, InterruptedException {
 
 		Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat");
-		Thread.sleep(10000);
+		Thread.sleep(30000);
 	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException {
@@ -88,7 +88,7 @@ public class BaseTwo {
 		if (device.contains("HEMUA_1")) {
 			startEmulator();
 		}
-		Thread.sleep(20000);
+		Thread.sleep(30000);
 
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, device);
 		// Standard for Android (So no Hard-Coded)

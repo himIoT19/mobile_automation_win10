@@ -1,8 +1,8 @@
 package e2eframework.scratch;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -14,14 +14,13 @@ import pageobjects.Preferences;
 
 public class ApiDemoTest extends BaseTwo {
 
-	@Test
-	public void apiDemo() throws IOException, InterruptedException {
+	@Test(dataProvider = "InputData", dataProviderClass = TestDataApiDemo.class)
+	public void apiDemoTest(String input) throws IOException, InterruptedException {
 		// START the Appium Server
 		service = startAppiumServer();
-		Thread.sleep(10000);
+		Thread.sleep(5000);
 
 		AndroidDriver<AndroidElement> driver = capabilities("apiDemo");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 		// xpath id className, androidUIAutomator
 		/*
@@ -58,13 +57,19 @@ public class ApiDemoTest extends BaseTwo {
 		// Frame Layout Page
 		// to input data in text field
 		FrameLayout fl = new FrameLayout(driver);
-		fl.getEditText().sendKeys("HiMaNsHu");
+		fl.getEditText().sendKeys(input);
 
 		// get(1) => handle duplicate instances
 		fl.getOkButton().get(1).click();
 
 		// STOP the Appium Server so that other TC cn not be affected.
 		service.stop();
+	}
+
+	@BeforeTest
+	public void killAllNodesAppiumServer() throws IOException, InterruptedException {
+		Runtime.getRuntime().exec("taskkill /F /IM node.exe");
+		Thread.sleep(2000);
 	}
 
 }
