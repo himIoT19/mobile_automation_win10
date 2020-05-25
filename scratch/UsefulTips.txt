@@ -20,4 +20,18 @@ List of devices attached
 3. To capture android elements(use "uiautomatorviewer.bat"):
 go to dir and run:
 c:\Users\Admin\AppData\Local\Android\sdk\tools\bin>uiautomatorviewer.bat
-		
+
+4. Run "Jenkins"
+=> For this project jenkins-jar(jenkins.war) location is:
+	"E:\Workspaces\Appium_Mobile_Automation\Section_15_FW_Part_3_Jenkins-CI_CD"
+=> To run on default port 8080 use cmd :
+	$ java -jar jenkins.war
+=> To run on user defined port use cmd :
+	$ java -jar jenkins.war --httpPort=9090
+	
+4. Run test cases using maven :
+=> simple and all steps included:
+	$ mvn test			-> do all the three things build, update, and test
+	
+	if properties(arguments eg. "deviceName") to be given using cmd:
+	$ mvn test -DdeviceName=HEMUA_1

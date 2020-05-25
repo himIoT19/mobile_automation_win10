@@ -61,7 +61,7 @@ public class BaseTwo {
 	public static void startEmulator() throws IOException, InterruptedException {
 
 		Runtime.getRuntime().exec(System.getProperty("user.dir") + "\\src\\main\\java\\resources\\startEmulator.bat");
-		Thread.sleep(10000);
+		Thread.sleep(30000);
 	}
 
 	public static AndroidDriver<AndroidElement> capabilities(String appName) throws IOException, InterruptedException {
@@ -80,10 +80,18 @@ public class BaseTwo {
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 
-		String device = (String) prop.get("device");
+		/*
+		 * If any key of global.properties changes frequently donot use this
+		 * String device = (String) prop.get("device");
+		 */
+		/*
+		 * Since the test can run for different device or emulators Entered
+		 * using mvn cmd prompt "mvn test -D<key>=<value>"
+		 */
+		String device = System.getProperty("deviceName");
 
 		/*
-		 * Start Emulator "XXX.bat" file is used to execute commands
+		 * Start Emulator ".bat" file is used to execute commands
 		 */
 		if (device.contains("HEMUA_1")) {
 			startEmulator();
