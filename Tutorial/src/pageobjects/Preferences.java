@@ -10,6 +10,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class Preferences {
+	@SuppressWarnings("unused")
 	private AndroidDriver<AndroidElement> driver;
 
 	public Preferences(AndroidDriver<AndroidElement> driver) {
@@ -19,5 +20,4 @@ public class Preferences {
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='3. Preference dependencies']")
 	public AndroidElement PreferenceDependencies;
-
 }
