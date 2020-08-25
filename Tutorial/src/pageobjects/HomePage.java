@@ -12,6 +12,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 // All the Objects belonging to one page will be defined in Java Class
 public class HomePage {
+	@SuppressWarnings("unused")
 	private AndroidDriver<AndroidElement> driver;
 
 	/*

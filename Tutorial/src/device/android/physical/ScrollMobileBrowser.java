@@ -1,10 +1,9 @@
 package device.android.physical;
 
-import org.junit.Assert;
-
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
